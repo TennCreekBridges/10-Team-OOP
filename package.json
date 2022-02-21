@@ -1,0 +1,23 @@
+{
+  "name": "10-team-oop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TennCreekBridges/10-Team-OOP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TennCreekBridges/10-Team-OOP/issues"
+  },
+  "homepage": "https://github.com/TennCreekBridges/10-Team-OOP#readme"
+}
