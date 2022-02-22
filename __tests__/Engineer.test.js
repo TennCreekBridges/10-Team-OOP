@@ -1,7 +1,7 @@
 // import Engineer
 const Engineer = require("../lib/Engineer");
 
-// test to see if employee is an engineer
+// test to see if employee has a github account
 it("checks to verify that a github account was created", () => {
     const data = {
         name: "Thomas Edison",
@@ -15,7 +15,7 @@ it("checks to verify that a github account was created", () => {
     expect (engineer.github).toEqual(expect.any(String));
 });
 
-it("displays engineer occupation", () => {
+it("returns engineer role", () => {
     const data = {
         name: "Thomas Edison",
         id: 248,
