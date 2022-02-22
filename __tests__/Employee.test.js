@@ -4,9 +4,9 @@ const Employee = require("../lib/Employee");
 // set test criteria
 describe("Employee", () => {
   const employee = new Employee(
-    "Bridgett",
+    "Sponge Bob",
     247,
-    "BridgettValet@gmail.com",
+    "Overachiever@BikiniBottom.com",
     "Employee"
   );
 
