@@ -77,7 +77,7 @@ return inquirer
            message: "Any additional team members?",
            default: false,
         },
-    ])
+    ])    
 
     .then((person) => {
         teamData.push(person);
