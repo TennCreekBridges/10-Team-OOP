@@ -1,7 +1,7 @@
 // required modules
 const fs = require('fs');
-const prompts = require('./utils/prompts');
-const generatePage = require('.utils/generatePage');
+const prompts = require('./utils/questions');
+const generatePage = require('./utils/generatePage');
 
 // constructors
 const Employee = require('./lib/Employee');
