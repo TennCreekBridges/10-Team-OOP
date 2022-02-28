@@ -1,29 +1,11 @@
 // import Engineer
 const Engineer = require("../lib/Engineer");
 
-// test to see if employee has a github account
-it("checks to verify that a github account was created", () => {
-    const data = {
-        name: "Thomas Edison",
-        id: 248,
-        email: "BrightIdea@ModernMan.com",
-        occupation: "Engineer",
-        github: "LightBulbMoment",
-    }
-    const engineer = new Engineer(data);
+test('test engineer object', () => {
+    const engineer = new Engineer('Thomas Edison', 248, 'BrightIdea@ModernMan.com', 'LightBulbMoment');
 
-    expect (engineer.github).toEqual(expect.any(String));
-});
-
-it("returns engineer role", () => {
-    const data = {
-        name: "Thomas Edison",
-        id: 248,
-        email: "BrightIdea@ModernMan.com",
-        occupation: "Engineer",
-        github: "LightBulbMoment",
-    };
-    const engineer = new Engineer(data);
-
-    expect(engineer.getRole()).toEqual(data.role);
+    expect(engineer.name).toEqual(expect.any(String));
+    expect(engineer.id).toEqual(expect.any(Number));
+    expect(engineer.email).toEqual(expect.any(String));
+    expect(engineer.github).toEqual(expect.any(String));
 });

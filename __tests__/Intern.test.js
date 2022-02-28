@@ -1,16 +1,11 @@
-// import Intern
+// import Engineer
 const Intern = require("../lib/Intern");
 
-it("creates the employee school", () => {
-    const data = {
-        name: "Steve Jobs",
-        id: 249,
-        email: "SteveJ@HewlettPackard.com",
-        occupation: "Intern",
-        school: "Reed College",
-    };
+test('test intern object', () => {
+    const intern = new Intern('SteveJobs', 249, 'BigSteveJ@HewlettPackard.com', 'Reed College');
 
-    const intern = new Intern(data);
-
-    expect(intern.getRole()).toEqual(data.role);
+    expect(intern.name).toEqual(expect.any(String));
+    expect(intern.id).toEqual(expect.any(Number));
+    expect(intern.email).toEqual(expect.any(String));
+    expect(intern.school).toEqual(expect.any(String));
 });

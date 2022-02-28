@@ -1,32 +1,10 @@
-// import Employee
-const Employee = require("../lib/Employee");
+// import employee
+const Employee = require("../lib/employee");
 
-// set test criteria
-describe("Employee", () => {
-  const employee = new Employee(
-    "Sponge Bob",
-    247,
-    "Overachiever@BikiniBottom.com",
-    "Employee"
-  );
+test('test employee object', () => {
+    const employee = new Employee('Any Human', 247, 'OverAchiever@AwesomeCo.com');
 
-  // test for name
-  test("does the employee have a name?", () => {
     expect(employee.name).toEqual(expect.any(String));
-  });
-
-  // test for id number
-  test("does the employee have an ID number?", () => {
     expect(employee.id).toEqual(expect.any(Number));
-  });
-
-  // test for email address and validate
-  test("is the email address entered valid?", () => {
-    expect(employee.email).toEqual(expect.stringContaining("@"));
-  });
-
-  // test role to be Employee
-  test("is the employee role === employee?", () => {
-    expect(employee.role).toBe("Employee");
-  });
+    expect(employee.email).toEqual(expect.any(String));
 });

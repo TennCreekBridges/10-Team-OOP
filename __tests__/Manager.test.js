@@ -1,29 +1,11 @@
 // import Manager
 const Manager = require("../lib/Manager");
 
-// test to see if employee has an office number
-it("adds employee office number", () => {
-    const data = {
-        name: "Jeff Bezos",
-        id: 250,
-        email: "Moonshot@Amazon.com",
-        occupation: "Manager",
-        office: 10,
-    };
-    const manager = new Manager(data);
+test('test manager object', () => {
+    const manager = new Manager('Jeff Bezos', 250, 'MoonShot@Amazon.com', 10);
 
+    expect(manager.name).toEqual(expect.any(String));
+    expect(manager.id).toEqual(expect.any(Number));
+    expect(manager.email).toEqual(expect.any(String));
     expect(manager.office).toEqual(expect.any(Number));
-});
-
-it("returns the manager role", () => {
-    const data = {
-        name: "Jeff Bezos",
-        id: 250,
-        email: "Moonshot@Amazon.com",
-        occupation: "Manager",
-        office: 10,
-    };
-    const manager = new Manager(data);
-
-    expect(manager.getRole()).toEqual(data.role);
 });
