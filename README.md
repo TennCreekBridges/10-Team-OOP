@@ -49,6 +49,9 @@ This app was created using JavaScript, HTML, Node, NPM, Inquire, Jest & Bootstra
 Join me in a quick run through of the app's functionality.
 https://drive.google.com/file/d/1l8AkmWEHYAK6djlpYE1OxiYNakbtVGov/view
 
+Second quick walkthrough demonstrating passing tests.
+https://drive.google.com/file/d/1kLEI0fr7wXuDTFYpTyP157llKGdBnfnh/view
+
 <a name ="screenshots"></a>
 ## Screenshots
 CLI app in action:
@@ -57,6 +60,8 @@ CLI app in action:
 Expected web output:
 ![Screen Shot 2022-02-27 at 9 45 07 PM](https://user-images.githubusercontent.com/91682561/155920737-07f4a023-5ac7-4022-b2c4-23900f3c0a27.png)
 
+Passing tests:
+![Screen Shot 2022-02-27 at 10 46 12 PM](https://user-images.githubusercontent.com/91682561/155925685-63addee4-a037-4a36-b8ba-af1045d4580c.png)
 
 <a name="sources"></a>
 ## Sources
