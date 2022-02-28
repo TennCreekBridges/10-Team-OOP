@@ -88,6 +88,7 @@ const createTeam = (team) => {
 	return html.join("");
 };
 
+// generate HTML
 const generatePage = (team) => {
 	return `
     <!DOCTYPE html>
@@ -123,4 +124,5 @@ const generatePage = (team) => {
     `;
 };
 
+// export generatePage
 module.exports = generatePage;
